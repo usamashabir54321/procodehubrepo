@@ -11,6 +11,7 @@
 				title: 'PRO CODE HUB WEB',
 				link: [
 					{ rel: 'stylesheet' , type: 'text/css' , href: 'web/assets/css/theme.css' },
+					{ rel: 'stylesheet' , type: 'text/css' , href: 'web/assets/css/animate.min.css' },
 				],
 			}
 		},
@@ -43,8 +44,18 @@
 		font-size: 14px;
 	}
 	.c_cards .text-container button {padding: 12px 14px;}
+	#home_vid_iframe {position: absolute;z-index: 1;}
+	#home_overlay {
+		z-index: 3;
+	    background-color: white;
+	    position: relative;
+	}
 	@media screen and (max-width: 400px) {
-		.c_cards .text-container button {padding: 12px 7px;}
+		.c_cards .text-container button {
+			padding: 12px 7px;
+			font-size: 8px;
+			font-weight: 900;
+		}
 		.c_cards .text-container h3 {
 			font-size: 22px;
 			font-weight: 700;

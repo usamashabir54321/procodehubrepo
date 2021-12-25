@@ -18,7 +18,7 @@
 					<div class="container pl-5 pr-5">
 
 							<!-- CALLING GAMING CARDS COMPONENTS -->
-						<LazyPagesCardsCard :cards="cards"/>
+						<LazyPagesCardsCard :cards="cards" page="plugins"/>
 
 						<div class="row justify-content-center pt-5 mb-4">
 							<div class="col">
@@ -35,10 +35,15 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-10">
 							<div class="row align-items-center">
-								<div class="col-lg-6 text-lg-left"><a class="btn btn-primary btn-lg rounded-capsule mt-4" href="https://www.youtube.com/channel/UCOZXtDKHb2e12KLHtUbJNGQ" target="_blank">GO TO CHANNEL</a></div>
-								<div class="col-lg-6 text-lg-right mt-2 mt-lg-0 pt-4">
-									<p class="fs--1 text-uppercase ls font-weight-bold mb-0">Provided by <span class="fas fa-heart mx-1"><a href="https://www.youtube.com/channel/UCOZXtDKHb2e12KLHtUbJNGQ" target="_blank" class="text-success">Pro</a></span> code hub channel</p>
+
+								<div class="col-lg-4 text-lg-left"><a class="btn btn-primary btn-lg rounded-capsule mt-4" href="https://www.youtube.com/channel/UCOZXtDKHb2e12KLHtUbJNGQ" target="_blank">GO TO CHANNEL</a></div>
+								<div class="col-lg-4 text-lg-center"><a class="btn btn-danger btn-lg mt-4" href="https://www.youtube.com/channel/UCOZXtDKHb2e12KLHtUbJNGQ" target="_blank" style="color:white;"><b>Subscribe Us</b></a></div>
+								<div class="col-lg-4 text-lg-right mt-2 mt-lg-0 pt-4">
+									<p class="fs--1 text-uppercase ls font-weight-bold mb-0">
+										Provided by <span class="fas fa-heart mx-1"><a href="https://www.youtube.com/channel/UCOZXtDKHb2e12KLHtUbJNGQ" target="_blank" class="text-success">Pro</a></span> code hub channel
+									</p>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -62,7 +67,7 @@
 			return {
 				cards: [
 						/*PLUGINS INVENTORY RECORD*/
-					{src: 'https://www.youtube.com/embed/4z51NvdLI3Y' ,title: 'Snow Effect Plugin', link: 'snow-effect'},
+					{src: 'https://www.youtube.com/embed/4z51NvdLI3Y/?autoplay=1&mute=1&loop=1&playlist=4z51NvdLI3Y' ,title: 'Snow Effect Plugin', link: 'snow-effect'},
 
 				],
 			}

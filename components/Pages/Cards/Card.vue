@@ -5,12 +5,12 @@
 			<div class="c_cards text-center">
 				<div class="img-container">
 					<!-- autoplay loop muted -->
-					<iframe :src="obj.src" class="c_m_item video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe :src="obj.src" class="c_m_item video" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay;fullscreen;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe>
 				</div>
 				<div class="text-container">
 					<h3 class="text-success mt-2 mb-3">{{ obj.title }}</h3>
 					<div class="mt-3">
-						<a :href="`/plugins/${obj.link}`" target="_blank"><button class="btn btn-danger mr-2">Preview</button></a>
+						<a :href="`/${page}/${obj.link}`" target="_blank"><button class="btn btn-danger mr-2">Preview</button></a>
 						<button class="btn btn-success">Download</button>
 					</div>
 				</div>
@@ -22,6 +22,6 @@
 
 <script>
 	export default {
-		props: ['cards'],
+		props: ['cards','page'],
 	}
 </script>
