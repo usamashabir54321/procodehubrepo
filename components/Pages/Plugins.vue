@@ -9,7 +9,7 @@
 		</div>
 		<div class="row justify-content-center">
 				<!-- ITEM CARDS -->
-			<div v-for="(obj , index) in cards" :key="index" class="col-sm-12 col-md-6 col-lg-3">
+			<div v-for="(obj , index) in cards" :key="index" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 				<div class="c_cards text-center">
 					<div class="img-container">
 						<iframe :src="obj.src" class="c_m_item video" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay;fullscreen;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe>
@@ -18,7 +18,7 @@
 						<h3 class="text-success mt-2 mb-3">{{ obj.title }}</h3>
 						<div class="mt-3">
 							<a :href="`/plugins/${obj.link}`" target="_blank"><button class="btn btn-danger mr-2">Preview</button></a>
-							<button v-if="!is_donld" onclick="alert('It\'s take 2 minutes to enable download button.Please waite some moments.')" class="btn btn-dark">Download</button>
+							<button v-if="!is_donld" onclick="alert('Downloading button will be enabled after completing videos.')" class="btn btn-dark">Download</button>
 							<button v-else @click="$emit('goDonld',obj)" class="btn btn-success">Download</button>
 						</div>
 					</div>

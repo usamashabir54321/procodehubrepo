@@ -44,7 +44,15 @@
 		line-height: 19px;
 		font-size: 14px;
 	}
-	.c_cards .text-container button {padding: 12px 14px;}
+	.c_cards .text-container button {
+		padding: 12px 7px;
+		font-size: 8px;
+		font-weight: 900;
+	}
+	.c_cards .text-container h3 {
+		font-size: 22px;
+		font-weight: 700;
+	}
 	#home_vid_iframe {position: absolute;z-index: 1;}
 	#home_overlay {
 		z-index: 3;
@@ -52,15 +60,6 @@
 	    position: relative;
 	}
 	@media screen and (max-width: 400px) {
-		.c_cards .text-container button {
-			padding: 12px 7px;
-			font-size: 8px;
-			font-weight: 900;
-		}
-		.c_cards .text-container h3 {
-			font-size: 22px;
-			font-weight: 700;
-		}
 		.c_cards .text-container {margin: -110px 0px 0px 0px;}
 	}
 </style>
