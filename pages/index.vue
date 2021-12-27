@@ -82,16 +82,16 @@
 				now_dnld: {},
 			}
 		},
-		mounted () {
-			this.$axios.get('http://localhost:8000/api/codehubGet/enter_u_counter').then(res => { console.log('total number of people has visited my website yet => ',res.data) });
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/five_min_u').then(res => { console.log('user 5 min visited => ',res.data) }); },60000*5);
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/ten_min_u').then(res => { console.log('user 10 min visited => ',res.data) }); },60000*10);
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/twenty_min_u').then(res => { console.log('user 20 min visited => ',res.data) }); },60000*20);
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/thirty_min_u').then(res => { console.log('user 30 min visited => ',res.data) }); },60000*30);
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/forty_min_u').then(res => { console.log('user 40 min visited => ',res.data) }); },60000*40);
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/fifty_min_u').then(res => { console.log('user 50 min visited => ',res.data) }); },60000*50);
-			setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/onehour_min_u').then(res => { console.log('user 1h min visited => ',res.data) }); },60000*60);
-		},
+		// mounted () {
+		// 	this.$axios.get('http://localhost:8000/api/codehubGet/enter_u_counter').then(res => { console.log('total number of people has visited my website yet => ',res.data) });
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/five_min_u').then(res => { console.log('user 5 min visited => ',res.data) }); },60000*5);
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/ten_min_u').then(res => { console.log('user 10 min visited => ',res.data) }); },60000*10);
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/twenty_min_u').then(res => { console.log('user 20 min visited => ',res.data) }); },60000*20);
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/thirty_min_u').then(res => { console.log('user 30 min visited => ',res.data) }); },60000*30);
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/forty_min_u').then(res => { console.log('user 40 min visited => ',res.data) }); },60000*40);
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/fifty_min_u').then(res => { console.log('user 50 min visited => ',res.data) }); },60000*50);
+		// 	setTimeout(() => { this.$axios.get('http://localhost:8000/api/codehubGet/onehour_min_u').then(res => { console.log('user 1h min visited => ',res.data) }); },60000*60);
+		// },
 		methods: {
 			goDonld (obj) { this.now_dnld = obj;this.page = 'download'; },
 		},
