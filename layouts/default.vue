@@ -1,7 +1,8 @@
 <template>
-	<main id="my_web_id">
-		<Nuxt keep-alive />
-	</main>
+	<div id="my_web_id">
+		<LazyCommonVideos />
+		<main><Nuxt keep-alive /></main>
+	</div>
 </template>
 
 <script>
